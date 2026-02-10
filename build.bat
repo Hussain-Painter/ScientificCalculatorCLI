@@ -1,0 +1,1 @@
+go build -o Deployable\scicalculator.exe .\main\main.go

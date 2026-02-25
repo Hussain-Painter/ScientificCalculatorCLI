@@ -21,7 +21,7 @@ func Base() {
 		case 1:
 			Binary()
 		case 2:
-			fmt.Println("OCTAL MENU")
+			Octal()
 		case 3:
 			fmt.Println("DECIMAL MENU")
 		case 4:

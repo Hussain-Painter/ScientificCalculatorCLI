@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"scientific/calculator/cli/arithmetic"
+	"scientific/calculator/cli/base"
 	"scientific/calculator/cli/renderer"
 )
 
@@ -14,7 +15,7 @@ func main() {
 	for {
 		err := renderer.Render("SCIENTIFIC CALCULATOR", []string{"Math", "Base", "Postfix Eval."})
 		if err != nil {
-			fmt.Printf("Something has gone terribily wrong %e", err)
+			fmt.Printf("Something has gone terribily wrong in rendering %e", err)
 			return
 		}
 		fmt.Print("\t\t\t\t\t*****Enter your choice*****\n\t\t\t\t\t\t")
@@ -22,6 +23,9 @@ func main() {
 		switch ch {
 		case 1:
 			arithmetic.Arithmetic()
+
+		case 2:
+			base.Base()
 		case 4:
 			return
 		}
